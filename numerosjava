@@ -1,0 +1,15 @@
+import java.util.Random;
+
+public class GeneradorNumerosAleatorios {
+    public static void main(String[] args) {
+        // Crear una instancia de la clase Random
+        Random random = new Random();
+
+        // Generar y mostrar 10 números aleatorios entre 1 y 10
+        for (int i = 0; i < 10; i++) {
+            // Generar un número aleatorio entre 1 y 10 (inclusive)
+            int numeroAleatorio = random.nextInt(10) + 1;
+            System.out.println(numeroAleatorio);
+        }
+    }
+}
